@@ -1,0 +1,1 @@
+To compile the program, simply run the make command which will compile your c program file and make an executable file called cat. Then all you have to do is type cat with the filename(s) you want the program to read or you can insert no filenames and the program will simply echo whatever you type.

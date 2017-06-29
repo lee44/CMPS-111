@@ -1,0 +1,109 @@
+Design Document
+
+
+Kernel Modifications:
+	vm_page.c
+		Put inactive pages at the front of the list instead of rear
+			vm_page_deactivate
+				change _vm_page_deactivate(m, 0) to _vm_page_deactivate(m, 1)
+					> This is done to set 'athead' in _vm_page_deactivate
+					> _vm_page_deactivate looks at 'athead' to decide if it should
+					put something at the front or the end of the list.
+					> Redundant after changes made to _vm_page_deactivate, however
+					it does a good job of illustrating the point at which it picks.
+			_vm_page_deactivate
+				change TailQ_INSERT_HEAD to TAILQ_INSERT_TAIL
+					> This is a good safety net, if a function decides to directly
+					access this, as we observed at least one other function do.
+		Move pages to front of inactive list instead of rear
+			vm_page_requeue_locked
+				Change TailQ_INSERT_TAIL to TAILQ_INSERT_HEAD
+					> This is where the page is reinserted back into the queue, 
+					however, instead of the back, we will put it at the front.
+			vm_page_requeue_locked
+				Change TailQ_INSERT_TAIL to TAILQ_INSERT_HEAD
+					> You change the same thing here, for the same reasons as above.
+	vm_pageout.c
+		Instead of subtracting from activity count, you divide it by two
+			vm_pageout_scan
+				Change m->act_count -= min(m->act_count, ACT_DECLINE) to 
+				m->act_count = m->act_count/2
+					> Here, it does the min of m->act_count, and ACT_DECLINE in 
+					order to make sure you don't end up with a negative number. So
+					in reality, you're basically subtracting by ACT_DECLINE, while
+					making sure act_count is set to at the lowest, 0.
+					> We replace this by m->act_count/2 because it takes the 
+					current act_count and divides it by two, and saves that value 
+					back in the variable.
+		Run pageout more frequently than it currently does (about every 10 secs)
+			vm_pageout_init
+				Change vm_pageout_update_period = 600 to 
+				vm_pageout_update_period = 10
+					> Here, the integer value is in seconds. Previously it was
+					running once every 600 seconds (10 minutes). Now, it will
+					run once every 10 seconds.
+					> This is required to see much effect.
+	vm_phys.c
+		Put pages on the front of the back of the free list instead of front
+			vm_phys_free_pages
+				change vm_freelist_add(fl, m, order, 1) to 
+				vm_freelist_add(fl, m, order, 0)
+					> Here, the last argument (int) decides whether to put 
+					the page at the front or the end of the free list. So
+					by changing the 1 to a 0, we alter it's decision. The
+					1 signifies adding it to the front, 0 to the back.
+Statistic Printing:
+	General
+		> We implemented the statistics with adding a 4 global variables
+		in page.h. One for doing each of:
+			pages moved from active to inactive
+			pages moved form inactive to active
+			pages moved from inactive to cache/free
+			pages queued for flush
+		> In addition to that, we had two variables local to the 
+		vm_pageout_scan function, this is for the number of active and
+		inactive pages scanned. Also two variables in there for whether
+		or not inactive and active queues were even scanned.
+	Number of Active Pages Scanned
+		The number of pages scanned is incremented in vm_pageout_scan
+		> According to the book, it's done in the for loop at line 1387
+		in our code. The comments above say that that's when the active 
+		pages are scanned.
+	Number of Inactive Pages Scanned
+		The number of pages scanned is incremented in vm_pageout_scan
+		> According to the book, it's done in the for loop at line 1009
+		in our code. The comments above say that that's when the pages
+		in the inactive queues are scanned.
+	Pages moved from active to inactive
+		The pages are moved from active to inactive in _vm_page_deactivate
+		> We incremented active_to_inactive every time this function was 
+		called with it's argument a page that is currently in the active
+		queue.
+	Pages moved from inactive to active
+		The pages are moved from inactive to active in vm_page_activate
+		> We incremented inactive_to_active every time this function was
+		called with it's argument a page that is currently not in the
+		inactive queue.
+	Pages moved from inactive to cache/free
+		The pages are moved form inactive to cache/free using the 
+		functions vm_page_free_toq and vm_page_cache
+		> In vm_page_free_toq I check to see if the page passed in 
+		is currently in the inactive queue, if it is, I increment 
+		inactive_to_cacheFree.
+		> In vm_page_cache I check to see if the page passed in is
+		currently in the inactive queue, if it is, I increment 
+		inactive_to_cacheFree.
+	Pages Queued for flush
+		The pages are queued for flush in vm_pageout_scan
+		> I looked for the function vm_pageout_clean, as the book
+		referred to that part of the code as the one queueing pages
+		to be flushed.
+		> If vm_pageout_clean call returned a non-zero value, that
+		means the page was indeed flushed, and I increment the count.
+	Total Pages Scanned
+		This was simply the sum of inactive and active pages scanned.
+	Printing:
+		I printed all of this out using log
+		> I printed it to /var/log/messages using:
+			log(LOG_INFO, "string")
+		> I then retreived the info from the log using a cut command.

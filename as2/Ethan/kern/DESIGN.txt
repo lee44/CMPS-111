@@ -1,0 +1,34 @@
+For our project, we modified 4 files: sched_ule.c, kern_switch.c, proc.h, runq.h. 
+
+sched_ule.c:
+	In schedu_ule.c, we modified the function tdq_runq_add by first checking if the process is root. If it is the process will be put in the queues
+	that are created for root processes. If not, we will add them to either the interactive, timeshare, or idle queue. To find if a process is root
+	we simply access a variable cr_uid which if 0 will tell us the process is a root process. If not then give each thread a default number of 
+	tickets, 500 and insert them to their respective queues. We call a function runq_add() which will add the thread to its respective queue.
+
+	We also modified sched_nice by simply adding our function sched_modify_tickets which will modify the passed thread's tickets based on their 
+	nice value. sched_modify_tickets function simply takes the nice value, put it into our forumula and add it to the current thread's tickets. 
+	However we make sure the thread's tickets dont exceed 100000 and dont fall below 1. If it does, we set the number of tickets to  100000 and 1 
+	respectively.
+
+	For sched_priority, we inserted our sched_modify_tickets which will take the interactivity score as its value instead of a nice value as it did 
+	for sched_nice. This score will reward threads with a good score and penalize those with a bad score.
+
+	In tdq_choose function, we simply call our lottery function: runq_choose_by_lottery which will return a thread chosen by the lottery. Once a thread
+	is returned, that thread is simply returned to the caller of tdq_choose.
+
+kern_switch.c:
+	We added a function called runq_choose_by_lottery which creates a random number and we take the modulo of that number with totalTickets and store it in a
+	variable called r. Then we use the TAILQ_FOREACH function that cycles through the queue and adds up the ticket of each thread to a counter variable. This counter variable is compared to r and if it is bigger than the r than we choose that thread to return.
+
+	In addition, we added 1 line to the runq_remove function which simply subtracts the tickets from the thread that is removed from the queue to the total number of
+	tickets of that queue.
+
+	In runq_add, it simply adds a thread to its respective queue and recalculates the total tickets of the queue that the thread is being added to.
+
+proc.h
+	We only added two variables to the struct thread called tickets and a bool variable initialized. Tickets is number of tickets each thread has and initialized
+	is a flag to tell us if the thread has already been added to a queue.
+
+runq.h
+	We only added one line called totalTickets which stores the total tickets for each queue.

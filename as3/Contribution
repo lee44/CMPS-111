@@ -1,0 +1,8 @@
+For my contribution, I found and modified the functions that inserted pages 
+for the inactive/active queue, a function that reinserted pages back into 
+queues and changed the page out scan to 10 seconds. The changes were very
+simple because our assignment wanted pages to be inserted at front instead 
+of rear so just changing the TAILQ_INSERT_TAIL to TAIL_INSERT_HEAD did the 
+trick. In addition, I helped my team debug any errors and brain stormed ideas 
+on how to analyze the data we gathered. I would rate my team members as people 
+who tried their best to get the assignment done.

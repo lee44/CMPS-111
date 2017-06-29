@@ -1,0 +1,1 @@
+To compile the program, simply type "make" into the console and press enter. The make command will compile and link lex.yy.c and myshell.c. A executable called myshell will be created and to run it just type ./myshell into the console.

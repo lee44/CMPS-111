@@ -1,0 +1,368 @@
+Feb 11 17:00:00 FreeBSD103 newsyslog[737]: logfile turned over due to size>100K
+Feb 11 20:02:04 FreeBSD103 kernel: .
+Feb 11 20:02:04 FreeBSD103 ntpd[588]: ntpd exiting on signal 15 (Terminated)
+Feb 11 20:02:05 FreeBSD103 kernel: , 588.
+Feb 11 20:02:05 FreeBSD103 syslogd: exiting on signal 15
+Feb 16 16:46:52 FreeBSD103 syslogd: kernel boot file is /boot/kernel/kernel
+Feb 16 16:46:52 FreeBSD103 kernel: Copyright (c) 1992-2016 The FreeBSD Project.
+Feb 16 16:46:52 FreeBSD103 kernel: Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+Feb 16 16:46:52 FreeBSD103 kernel: The Regents of the University of California. All rights reserved.
+Feb 16 16:46:52 FreeBSD103 kernel: FreeBSD is a registered trademark of The FreeBSD Foundation.
+Feb 16 16:46:52 FreeBSD103 kernel: FreeBSD 10.3-RELEASE #0 r297264: Fri Mar 25 02:10:02 UTC 2016
+Feb 16 16:46:52 FreeBSD103 kernel: root@releng1.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC amd64
+Feb 16 16:46:52 FreeBSD103 kernel: FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512
+Feb 16 16:46:52 FreeBSD103 kernel: CPU: Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz (3492.00-MHz K8-class CPU)
+Feb 16 16:46:52 FreeBSD103 kernel: Origin="GenuineIntel"  Id=0x306c3  Family=0x6  Model=0x3c  Stepping=3
+Feb 16 16:46:52 FreeBSD103 kernel: Features=0x1783fbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE,SSE2,HTT>
+Feb 16 16:46:52 FreeBSD103 kernel: Features2=0x5ed82203<SSE3,PCLMULQDQ,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AESNI,XSAVE,OSXSAVE,AVX,RDRAND>
+Feb 16 16:46:52 FreeBSD103 kernel: AMD Features=0x28100800<SYSCALL,NX,RDTSCP,LM>
+Feb 16 16:46:52 FreeBSD103 kernel: AMD Features2=0x21<LAHF,ABM>
+Feb 16 16:46:52 FreeBSD103 kernel: Structured Extended Features=0x2000<NFPUSG>
+Feb 16 16:46:52 FreeBSD103 kernel: TSC: P-state invariant
+Feb 16 16:46:52 FreeBSD103 kernel: real memory  = 4831838208 (4608 MB)
+Feb 16 16:46:52 FreeBSD103 kernel: avail memory = 4113596416 (3923 MB)
+Feb 16 16:46:52 FreeBSD103 kernel: Event timer "LAPIC" quality 400
+Feb 16 16:46:52 FreeBSD103 kernel: ACPI APIC Table: <VBOX   VBOXAPIC>
+Feb 16 16:46:52 FreeBSD103 kernel: FreeBSD/SMP: Multiprocessor System Detected: 2 CPUs
+Feb 16 16:46:52 FreeBSD103 kernel: FreeBSD/SMP: 1 package(s) x 2 core(s)
+Feb 16 16:46:52 FreeBSD103 kernel: cpu0 (BSP): APIC ID:  0
+Feb 16 16:46:52 FreeBSD103 kernel: cpu1 (AP): APIC ID:  1
+Feb 16 16:46:52 FreeBSD103 kernel: random: <Software, Yarrow> initialized
+Feb 16 16:46:52 FreeBSD103 kernel: ioapic0: Changing APIC ID to 2
+Feb 16 16:46:52 FreeBSD103 kernel: ioapic0 <Version 2.0> irqs 0-23 on motherboard
+Feb 16 16:46:52 FreeBSD103 kernel: kbd1 at kbdmux0
+Feb 16 16:46:52 FreeBSD103 kernel: acpi0: <VBOX VBOXXSDT> on motherboard
+Feb 16 16:46:52 FreeBSD103 kernel: acpi0: Power Button (fixed)
+Feb 16 16:46:52 FreeBSD103 kernel: acpi0: Sleep Button (fixed)
+Feb 16 16:46:52 FreeBSD103 kernel: cpu0: <ACPI CPU> on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: cpu1: <ACPI CPU> on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: attimer0: <AT timer> port 0x40-0x43,0x50-0x53 on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: Timecounter "i8254" frequency 1193182 Hz quality 0
+Feb 16 16:46:52 FreeBSD103 kernel: Event timer "i8254" frequency 1193182 Hz quality 100
+Feb 16 16:46:52 FreeBSD103 kernel: Timecounter "ACPI-fast" frequency 3579545 Hz quality 900
+Feb 16 16:46:52 FreeBSD103 kernel: acpi_timer0: <32-bit timer at 3.579545MHz> port 0x4008-0x400b on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: pcib0: <ACPI Host-PCI bridge> port 0xcf8-0xcff on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: pci0: <ACPI PCI bus> on pcib0
+Feb 16 16:46:52 FreeBSD103 kernel: isab0: <PCI-ISA bridge> at device 1.0 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: isa0: <ISA bus> on isab0
+Feb 16 16:46:52 FreeBSD103 kernel: atapci0: <Intel PIIX4 UDMA33 controller> port 0x1f0-0x1f7,0x3f6,0x170-0x177,0x376,0xd000-0xd00f at device 1.1 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: ata0: <ATA channel> at channel 0 on atapci0
+Feb 16 16:46:52 FreeBSD103 kernel: ata1: <ATA channel> at channel 1 on atapci0
+Feb 16 16:46:52 FreeBSD103 kernel: vgapci0: <VGA-compatible display> mem 0xe0000000-0xe3ffffff irq 18 at device 2.0 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: vgapci0: Boot video device
+Feb 16 16:46:52 FreeBSD103 kernel: em0: <Intel(R) PRO/1000 Legacy Network Connection 1.1.0> port 0xd010-0xd017 mem 0xf0000000-0xf001ffff irq 19 at device 3.0 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: em0: Ethernet address: 08:00:27:89:41:6c
+Feb 16 16:46:52 FreeBSD103 kernel: pcm0: <Intel ICH (82801AA)> port 0xd100-0xd1ff,0xd200-0xd23f irq 21 at device 5.0 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: pcm0: <SigmaTel STAC9700/83/84 AC97 Codec>
+Feb 16 16:46:52 FreeBSD103 kernel: ohci0: <OHCI (generic) USB controller> mem 0xf0804000-0xf0804fff irq 22 at device 6.0 on pci0
+Feb 16 16:46:52 FreeBSD103 kernel: usbus0 on ohci0
+Feb 16 16:46:52 FreeBSD103 kernel: pci0: <bridge> at device 7.0 (no driver attached)
+Feb 16 16:46:52 FreeBSD103 kernel: acpi_acad0: <AC Adapter> on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: atkbdc0: <Keyboard controller (i8042)> port 0x60,0x64 irq 1 on acpi0
+Feb 16 16:46:52 FreeBSD103 kernel: atkbd0: <AT Keyboard> irq 1 on atkbdc0
+Feb 16 16:46:52 FreeBSD103 kernel: kbd0 at atkbd0
+Feb 16 16:46:52 FreeBSD103 kernel: atkbd0: [GIANT-LOCKED]
+Feb 16 16:46:52 FreeBSD103 kernel: psm0: <PS/2 Mouse> irq 12 on atkbdc0
+Feb 16 16:46:52 FreeBSD103 kernel: psm0: [GIANT-LOCKED]
+Feb 16 16:46:52 FreeBSD103 kernel: psm0: model IntelliMouse Explorer, device ID 4
+Feb 16 16:46:52 FreeBSD103 kernel: orm0: <ISA Option ROM> at iomem 0xc0000-0xc7fff on isa0
+Feb 16 16:46:52 FreeBSD103 kernel: sc0: <System console> at flags 0x100 on isa0
+Feb 16 16:46:52 FreeBSD103 kernel: sc0: VGA <16 virtual consoles, flags=0x300>
+Feb 16 16:46:52 FreeBSD103 kernel: vga0: <Generic ISA VGA> at port 0x3c0-0x3df iomem 0xa0000-0xbffff on isa0
+Feb 16 16:46:52 FreeBSD103 kernel: atrtc0: <AT realtime clock> at port 0x70 irq 8 on isa0
+Feb 16 16:46:52 FreeBSD103 kernel: Event timer "RTC" frequency 32768 Hz quality 0
+Feb 16 16:46:52 FreeBSD103 kernel: ppc0: cannot reserve I/O port range
+Feb 16 16:46:52 FreeBSD103 kernel: ZFS NOTICE: Prefetch is disabled by default if less than 4GB of RAM is present;
+Feb 16 16:46:52 FreeBSD103 kernel: to enable, add "vfs.zfs.prefetch_disable=0" to /boot/loader.conf.
+Feb 16 16:46:52 FreeBSD103 kernel: ZFS filesystem version: 5
+Feb 16 16:46:52 FreeBSD103 kernel: ZFS storage pool version: features support (5000)
+Feb 16 16:46:52 FreeBSD103 kernel: Timecounters tick every 1.000 msec
+Feb 16 16:46:52 FreeBSD103 kernel: pcm0: measured ac97 link rate at 23299 Hz
+Feb 16 16:46:52 FreeBSD103 kernel: usbus0: 12Mbps Full Speed USB v1.0
+Feb 16 16:46:52 FreeBSD103 kernel: ugen0.1: <Apple> at usbus0
+Feb 16 16:46:52 FreeBSD103 kernel: uhub0: <Apple OHCI root HUB, class 9/0, rev 1.00/1.00, addr 1> on usbus0
+Feb 16 16:46:52 FreeBSD103 kernel: ada0 at ata0 bus 0 scbus0 target 0 lun 0
+Feb 16 16:46:52 FreeBSD103 kernel: ada0: <VBOX HARDDISK 1.0> ATA-6 device
+Feb 16 16:46:52 FreeBSD103 kernel: ada0: Serial Number VB391321dd-8dc670d5
+Feb 16 16:46:52 FreeBSD103 kernel: ada0: 33.300MB/s transfers (UDMA2, PIO 65536bytes)
+Feb 16 16:46:52 FreeBSD103 kernel: ada0: 30720MB (62914560 512 byte sectors)
+Feb 16 16:46:52 FreeBSD103 kernel: ada0: Previously was known as ad0
+Feb 16 16:46:52 FreeBSD103 kernel: cd0 at ata1 bus 0 scbus1 target 0 lun 0
+Feb 16 16:46:52 FreeBSD103 kernel: cd0: <VBOX CD-ROM 1.0> Removable CD-ROM SCSI device
+Feb 16 16:46:52 FreeBSD103 kernel: cd0: Serial Number VB2-01700376
+Feb 16 16:46:52 FreeBSD103 kernel: cd0: 33.300MB/s transfers (UDMA2, ATAPI 12bytes, PIO 65534bytes)
+Feb 16 16:46:52 FreeBSD103 kernel: cd0: Attempt to query device size failed: NOT READY, Medium not present
+Feb 16 16:46:52 FreeBSD103 kernel: random: unblocking device.
+Feb 16 16:46:52 FreeBSD103 kernel: SMP: AP CPU #1 Launched!
+Feb 16 16:46:52 FreeBSD103 kernel: Root mount waiting for: usbus0
+Feb 16 16:46:52 FreeBSD103 kernel: uhub0: 12 ports with 12 removable, self powered
+Feb 16 16:46:52 FreeBSD103 kernel: Trying to mount root from zfs:zroot/ROOT/default []...
+Feb 16 16:46:52 FreeBSD103 kernel: em0: link state changed to UP
+Feb 16 16:46:52 FreeBSD103 ntpd[620]: ntpd 4.2.8p6-a (1): Starting
+Feb 16 16:46:52 FreeBSD103 kernel: .
+Feb 16 16:46:52 FreeBSD103 kernel: allscreens
+Feb 16 16:46:52 FreeBSD103 ntpd[621]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): good hash signature
+Feb 16 16:46:52 FreeBSD103 ntpd[621]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2016-06-01T00:00:00Z last=2015-07-01T00:00:00Z ofs=36
+Feb 16 16:46:52 FreeBSD103 ntpd[621]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired less than 262 days ago
+Feb 16 16:46:52 FreeBSD103 kernel: Feb 16 16:46:52 FreeBSD103 ntpd[621]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired less than 262 days ago
+Feb 16 17:43:45 FreeBSD103 su: ewang13 to root on /dev/ttyv0
+Feb 16 17:53:16 FreeBSD103 kernel: em0: link state changed to DOWN
+Feb 16 17:53:21 FreeBSD103 kernel: em0: link state changed to UP
+Feb 16 17:53:21 FreeBSD103 devd: Executing '/etc/rc.d/dhclient quietstart em0'
+Feb 16 17:53:21 FreeBSD103 dhclient: New IP Address (em0): 10.0.2.15
+Feb 16 17:53:21 FreeBSD103 dhclient: New Subnet Mask (em0): 255.255.255.0
+Feb 16 17:53:21 FreeBSD103 dhclient: New Broadcast Address (em0): 10.0.2.255
+Feb 16 17:53:21 FreeBSD103 dhclient: New Routers (em0): 10.0.2.2
+Feb 16 18:13:22 FreeBSD103 kernel: em0: link state changed to DOWN
+Feb 16 18:13:27 FreeBSD103 kernel: em0: link state changed to UP
+Feb 16 18:13:27 FreeBSD103 devd: Executing '/etc/rc.d/dhclient quietstart em0'
+Feb 16 18:13:27 FreeBSD103 dhclient: New IP Address (em0): 10.0.2.15
+Feb 16 18:13:27 FreeBSD103 dhclient: New Subnet Mask (em0): 255.255.255.0
+Feb 16 18:13:27 FreeBSD103 dhclient: New Broadcast Address (em0): 10.0.2.255
+Feb 16 18:13:27 FreeBSD103 dhclient: New Routers (em0): 10.0.2.2
+Feb 16 18:13:50 FreeBSD103 pkg: stress-1.0.4 installed
+Feb 16 18:14:51 FreeBSD103 kernel: em0: link state changed to DOWN
+Feb 16 18:14:56 FreeBSD103 kernel: em0: link state changed to UP
+Feb 16 18:14:56 FreeBSD103 devd: Executing '/etc/rc.d/dhclient quietstart em0'
+Feb 16 18:14:56 FreeBSD103 dhclient: New IP Address (em0): 10.0.2.15
+Feb 16 18:14:56 FreeBSD103 dhclient: New Subnet Mask (em0): 255.255.255.0
+Feb 16 18:14:56 FreeBSD103 dhclient: New Broadcast Address (em0): 10.0.2.255
+Feb 16 18:14:56 FreeBSD103 dhclient: New Routers (em0): 10.0.2.2
+Feb 16 18:18:01 FreeBSD103 reboot: rebooted by ewang13
+Feb 16 18:18:01 FreeBSD103 syslogd: exiting on signal 15
+Feb 16 18:18:39 FreeBSD103 syslogd: kernel boot file is /boot/kernel/kernel
+Feb 16 18:18:39 FreeBSD103 kernel: Copyright (c) 1992-2016 The FreeBSD Project.
+Feb 16 18:18:39 FreeBSD103 kernel: Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
+Feb 16 18:18:39 FreeBSD103 kernel: The Regents of the University of California. All rights reserved.
+Feb 16 18:18:39 FreeBSD103 kernel: FreeBSD is a registered trademark of The FreeBSD Foundation.
+Feb 16 18:18:39 FreeBSD103 kernel: FreeBSD 10.3-RELEASE #2: Thu Feb 16 18:15:57 PST 2017
+Feb 16 18:18:39 FreeBSD103 kernel: ewang13@FreeBSD103:/usr/obj/usr/home/ewang13/cmps111/ewang13/usr/src/sys/MYKERNEL amd64
+Feb 16 18:18:39 FreeBSD103 kernel: FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512
+Feb 16 18:18:39 FreeBSD103 kernel: CPU: Intel(R) Core(TM) i5-4690K CPU @ 3.50GHz (3492.01-MHz K8-class CPU)
+Feb 16 18:18:39 FreeBSD103 kernel: Origin="GenuineIntel"  Id=0x306c3  Family=0x6  Model=0x3c  Stepping=3
+Feb 16 18:18:39 FreeBSD103 kernel: Features=0x1783fbff<FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,MMX,FXSR,SSE,SSE2,HTT>
+Feb 16 18:18:39 FreeBSD103 kernel: Features2=0x5ed82203<SSE3,PCLMULQDQ,SSSE3,CX16,SSE4.1,SSE4.2,MOVBE,POPCNT,AESNI,XSAVE,OSXSAVE,AVX,RDRAND>
+Feb 16 18:18:39 FreeBSD103 kernel: AMD Features=0x28100800<SYSCALL,NX,RDTSCP,LM>
+Feb 16 18:18:39 FreeBSD103 kernel: AMD Features2=0x21<LAHF,ABM>
+Feb 16 18:18:39 FreeBSD103 kernel: Structured Extended Features=0x2000<NFPUSG>
+Feb 16 18:18:39 FreeBSD103 kernel: TSC: P-state invariant
+Feb 16 18:18:39 FreeBSD103 kernel: real memory  = 4831838208 (4608 MB)
+Feb 16 18:18:39 FreeBSD103 kernel: avail memory = 4113588224 (3923 MB)
+Feb 16 18:18:39 FreeBSD103 kernel: Event timer "LAPIC" quality 400
+Feb 16 18:18:39 FreeBSD103 kernel: ACPI APIC Table: <VBOX   VBOXAPIC>
+Feb 16 18:18:39 FreeBSD103 kernel: FreeBSD/SMP: Multiprocessor System Detected: 2 CPUs
+Feb 16 18:18:39 FreeBSD103 kernel: FreeBSD/SMP: 1 package(s) x 2 core(s)
+Feb 16 18:18:39 FreeBSD103 kernel: cpu0 (BSP): APIC ID:  0
+Feb 16 18:18:39 FreeBSD103 kernel: cpu1 (AP): APIC ID:  1
+Feb 16 18:18:39 FreeBSD103 kernel: random: <Software, Yarrow> initialized
+Feb 16 18:18:39 FreeBSD103 kernel: ioapic0: Changing APIC ID to 2
+Feb 16 18:18:39 FreeBSD103 kernel: ioapic0 <Version 2.0> irqs 0-23 on motherboard
+Feb 16 18:18:39 FreeBSD103 kernel: kbd1 at kbdmux0
+Feb 16 18:18:39 FreeBSD103 kernel: acpi0: <VBOX VBOXXSDT> on motherboard
+Feb 16 18:18:39 FreeBSD103 kernel: acpi0: Power Button (fixed)
+Feb 16 18:18:39 FreeBSD103 kernel: acpi0: Sleep Button (fixed)
+Feb 16 18:18:39 FreeBSD103 kernel: cpu0: <ACPI CPU> on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: cpu1: <ACPI CPU> on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: attimer0: <AT timer> port 0x40-0x43,0x50-0x53 on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: Timecounter "i8254" frequency 1193182 Hz quality 0
+Feb 16 18:18:39 FreeBSD103 kernel: Event timer "i8254" frequency 1193182 Hz quality 100
+Feb 16 18:18:39 FreeBSD103 kernel: Timecounter "ACPI-fast" frequency 3579545 Hz quality 900
+Feb 16 18:18:39 FreeBSD103 kernel: acpi_timer0: <32-bit timer at 3.579545MHz> port 0x4008-0x400b on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: pcib0: <ACPI Host-PCI bridge> port 0xcf8-0xcff on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: pci0: <ACPI PCI bus> on pcib0
+Feb 16 18:18:39 FreeBSD103 kernel: isab0: <PCI-ISA bridge> at device 1.0 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: isa0: <ISA bus> on isab0
+Feb 16 18:18:39 FreeBSD103 kernel: atapci0: <Intel PIIX4 UDMA33 controller> port 0x1f0-0x1f7,0x3f6,0x170-0x177,0x376,0xd000-0xd00f at device 1.1 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: ata0: <ATA channel> at channel 0 on atapci0
+Feb 16 18:18:39 FreeBSD103 kernel: ata1: <ATA channel> at channel 1 on atapci0
+Feb 16 18:18:39 FreeBSD103 kernel: vgapci0: <VGA-compatible display> mem 0xe0000000-0xe3ffffff irq 18 at device 2.0 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: vgapci0: Boot video device
+Feb 16 18:18:39 FreeBSD103 kernel: em0: <Intel(R) PRO/1000 Legacy Network Connection 1.1.0> port 0xd010-0xd017 mem 0xf0000000-0xf001ffff irq 19 at device 3.0 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: em0: Ethernet address: 08:00:27:89:41:6c
+Feb 16 18:18:39 FreeBSD103 kernel: pcm0: <Intel ICH (82801AA)> port 0xd100-0xd1ff,0xd200-0xd23f irq 21 at device 5.0 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: pcm0: <SigmaTel STAC9700/83/84 AC97 Codec>
+Feb 16 18:18:39 FreeBSD103 kernel: ohci0: <OHCI (generic) USB controller> mem 0xf0804000-0xf0804fff irq 22 at device 6.0 on pci0
+Feb 16 18:18:39 FreeBSD103 kernel: usbus0 on ohci0
+Feb 16 18:18:39 FreeBSD103 kernel: pci0: <bridge> at device 7.0 (no driver attached)
+Feb 16 18:18:39 FreeBSD103 kernel: acpi_acad0: <AC Adapter> on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: atkbdc0: <Keyboard controller (i8042)> port 0x60,0x64 irq 1 on acpi0
+Feb 16 18:18:39 FreeBSD103 kernel: atkbd0: <AT Keyboard> irq 1 on atkbdc0
+Feb 16 18:18:39 FreeBSD103 kernel: kbd0 at atkbd0
+Feb 16 18:18:39 FreeBSD103 kernel: atkbd0: [GIANT-LOCKED]
+Feb 16 18:18:39 FreeBSD103 kernel: psm0: <PS/2 Mouse> irq 12 on atkbdc0
+Feb 16 18:18:39 FreeBSD103 kernel: psm0: [GIANT-LOCKED]
+Feb 16 18:18:39 FreeBSD103 kernel: psm0: model IntelliMouse Explorer, device ID 4
+Feb 16 18:18:39 FreeBSD103 kernel: orm0: <ISA Option ROM> at iomem 0xc0000-0xc7fff on isa0
+Feb 16 18:18:39 FreeBSD103 kernel: sc0: <System console> at flags 0x100 on isa0
+Feb 16 18:18:39 FreeBSD103 kernel: sc0: VGA <16 virtual consoles, flags=0x300>
+Feb 16 18:18:39 FreeBSD103 kernel: vga0: <Generic ISA VGA> at port 0x3c0-0x3df iomem 0xa0000-0xbffff on isa0
+Feb 16 18:18:39 FreeBSD103 kernel: atrtc0: <AT realtime clock> at port 0x70 irq 8 on isa0
+Feb 16 18:18:39 FreeBSD103 kernel: Event timer "RTC" frequency 32768 Hz quality 0
+Feb 16 18:18:39 FreeBSD103 kernel: ppc0: cannot reserve I/O port range
+Feb 16 18:18:39 FreeBSD103 kernel: ZFS NOTICE: Prefetch is disabled by default if less than 4GB of RAM is present;
+Feb 16 18:18:39 FreeBSD103 kernel: to enable, add "vfs.zfs.prefetch_disable=0" to /boot/loader.conf.
+Feb 16 18:18:39 FreeBSD103 kernel: ZFS filesystem version: 5
+Feb 16 18:18:39 FreeBSD103 kernel: ZFS storage pool version: features support (5000)
+Feb 16 18:18:39 FreeBSD103 kernel: Timecounters tick every 1.000 msec
+Feb 16 18:18:39 FreeBSD103 kernel: pcm0: measured ac97 link rate at 23242 Hz
+Feb 16 18:18:39 FreeBSD103 kernel: usbus0: 12Mbps Full Speed USB v1.0
+Feb 16 18:18:39 FreeBSD103 kernel: ugen0.1: <Apple> at usbus0
+Feb 16 18:18:39 FreeBSD103 kernel: uhub0: <Apple OHCI root HUB, class 9/0, rev 1.00/1.00, addr 1> on usbus0
+Feb 16 18:18:39 FreeBSD103 kernel: ada0 at ata0 bus 0 scbus0 target 0 lun 0
+Feb 16 18:18:39 FreeBSD103 kernel: ada0: <VBOX HARDDISK 1.0> ATA-6 device
+Feb 16 18:18:39 FreeBSD103 kernel: ada0: Serial Number VB391321dd-8dc670d5
+Feb 16 18:18:39 FreeBSD103 kernel: ada0: 33.300MB/s transfers (UDMA2, PIO 65536bytes)
+Feb 16 18:18:39 FreeBSD103 kernel: ada0: 30720MB (62914560 512 byte sectors)
+Feb 16 18:18:39 FreeBSD103 kernel: ada0: Previously was known as ad0
+Feb 16 18:18:39 FreeBSD103 kernel: cd0 at ata1 bus 0 scbus1 target 0 lun 0
+Feb 16 18:18:39 FreeBSD103 kernel: cd0: <VBOX CD-ROM 1.0> Removable CD-ROM SCSI device
+Feb 16 18:18:39 FreeBSD103 kernel: cd0: Serial Number VB2-01700376
+Feb 16 18:18:39 FreeBSD103 kernel: cd0: 33.300MB/s transfers (UDMA2, ATAPI 12bytes, PIO 65534bytes)
+Feb 16 18:18:39 FreeBSD103 kernel: cd0: Attempt to query device size failed: NOT READY, Medium not present
+Feb 16 18:18:39 FreeBSD103 kernel: random: unblocking device.
+Feb 16 18:18:39 FreeBSD103 kernel: SMP: AP CPU #1 Launched!
+Feb 16 18:18:39 FreeBSD103 kernel: Root mount waiting for: usbus0
+Feb 16 18:18:39 FreeBSD103 kernel: uhub0: 12 ports with 12 removable, self powered
+Feb 16 18:18:39 FreeBSD103 kernel: Trying to mount root from zfs:zroot/ROOT/default []...
+Feb 16 18:18:39 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 45, total_number_scan: 45,cnt.v_active_count: 437,cnt.v_inactive_count :1096,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 2938, inactive_to_active: 14,active_to_inactive: 1378number_Inactive_scanned: 0,number_active_scanned: 44, total_number_scan: 44,cnt.v_active_count: 437,cnt.v_inactive_count :1096,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:39 FreeBSD103 kernel: em0: link state changed to UP
+Feb 16 18:18:39 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 173, total_number_scan: 173,cnt.v_active_count: 1678,cnt.v_inactive_count :1680,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 1919, inactive_to_active: 1,active_to_inactive: 1268
+Feb 16 18:18:39 FreeBSD103 ntpd[605]: ntpd 4.2.8p6-a (1): Starting
+Feb 16 18:18:39 FreeBSD103 ntpd[606]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): good hash signature
+Feb 16 18:18:39 FreeBSD103 ntpd[606]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2016-06-01T00:00:00Z last=2015-07-01T00:00:00Z ofs=36
+Feb 16 18:18:39 FreeBSD103 ntpd[606]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired less than 262 days ago
+Feb 16 18:18:39 FreeBSD103 kernel: Feb 16 18:18:39 FreeBSD103 ntpd[606]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired less than 262 days ago
+Feb 16 18:18:40 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 323, total_number_scan: 323,cnt.v_active_count: 3153,cnt.v_inactive_count :2177,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 4593, inactive_to_active: 19,active_to_inactive: 3653
+Feb 16 18:18:41 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 468, total_number_scan: 468,cnt.v_active_count: 4545,cnt.v_inactive_count :2383,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 23, inactive_to_active: 0,active_to_inactive: 88
+Feb 16 18:18:42 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 478, total_number_scan: 478,cnt.v_active_count: 4734,cnt.v_inactive_count :2695,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 182, inactive_to_active: 1,active_to_inactive: 56
+Feb 16 18:18:43 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 488, total_number_scan: 488,cnt.v_active_count: 4779,cnt.v_inactive_count :2708,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 4, inactive_to_active: 1,active_to_inactive: 10
+Feb 16 18:18:44 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 507, total_number_scan: 507,cnt.v_active_count: 4701,cnt.v_inactive_count :2786,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:45 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 483, total_number_scan: 483,cnt.v_active_count: 4697,cnt.v_inactive_count :2790,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:46 FreeBSD103 login: ROOT LOGIN (root) ON ttyv0
+Feb 16 18:18:46 FreeBSD103 kernel: 
+Feb 16 18:18:46 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 497, total_number_scan: 497,cnt.v_active_count: 4566,cnt.v_inactive_count :3334,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 19, inactive_to_active: 0,active_to_inactive: 122
+Feb 16 18:18:47 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 468, total_number_scan: 468,cnt.v_active_count: 4563,cnt.v_inactive_count :3337,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:48 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 460, total_number_scan: 460,cnt.v_active_count: 4450,cnt.v_inactive_count :3450,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:49 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 451, total_number_scan: 451,cnt.v_active_count: 4406,cnt.v_inactive_count :3494,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:50 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 444, total_number_scan: 444,cnt.v_active_count: 4198,cnt.v_inactive_count :3702,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:51 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 430, total_number_scan: 430,cnt.v_active_count: 4153,cnt.v_inactive_count :3747,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:52 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 415, total_number_scan: 415,cnt.v_active_count: 4103,cnt.v_inactive_count :3797,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:53 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 411, total_number_scan: 411,cnt.v_active_count: 4053,cnt.v_inactive_count :3847,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:54 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 414, total_number_scan: 414,cnt.v_active_count: 3904,cnt.v_inactive_count :3996,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:55 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 401, total_number_scan: 401,cnt.v_active_count: 3849,cnt.v_inactive_count :4051,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:56 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 389, total_number_scan: 389,cnt.v_active_count: 3805,cnt.v_inactive_count :4095,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:57 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 40327, total_number_scan: 40327,cnt.v_active_count: 402879,cnt.v_inactive_count :4127,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:18:58 FreeBSD103 kernel: number_Inactive_scanned: 4127,number_active_scanned: 973854, total_number_scan: 977981,cnt.v_active_count: 976825,cnt.v_inactive_count :763,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 2067, inactive_to_active: 1321,active_to_inactive: 0
+Feb 16 18:18:59 FreeBSD103 kernel: number_Inactive_scanned: 763,number_active_scanned: 976827, total_number_scan: 977590,cnt.v_active_count: 976588,cnt.v_inactive_count :856,number_pages_queue_for_flush: 726,inactive_to_cacheFree: 146, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:19:00 FreeBSD103 kernel: number_Inactive_scanned: 856,number_active_scanned: 171602, total_number_scan: 172458,cnt.v_active_count: 927373,cnt.v_inactive_count :49225,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 854, inactive_to_active: 2,active_to_inactive: 37
+Feb 16 18:19:01 FreeBSD103 kernel: number_Inactive_scanned: 49446,number_active_scanned: 274703, total_number_scan: 324149,cnt.v_active_count: 881568,cnt.v_inactive_count :94841,number_pages_queue_for_flush: 49334,inactive_to_cacheFree: 189, inactive_to_active: 0,active_to_inactive: 221
+Feb 16 18:19:02 FreeBSD103 kernel: number_Inactive_scanned: 58352,number_active_scanned: 111805, total_number_scan: 170157,cnt.v_active_count: 883162,cnt.v_inactive_count :82965,number_pages_queue_for_flush: 45114,inactive_to_cacheFree: 13319, inactive_to_active: 0,active_to_inactive: 0number_Inactive_scanned: 21819,number_active_scanned: 10030, total_number_scan: 31849,cnt.v_active_count: 903657,cnt.v_inactive_count :62568,number_pages_queue_for_flush: 1432,inactive_to_cacheFree: 14437, inactive_to_active: 5967,active_to_inactive: 0
+Feb 16 18:19:02 FreeBSD103 kernel: number_Inactive_scanned: 17709,number_active_scanned: 6064, total_number_scan: 23773,cnt.v_active_count: 918872,cnt.v_inactive_count :44871,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 17697, inactive_to_active: 12,active_to_inactive: 0number_Inactive_scanned: 14543,number_active_scanned: 90071, total_number_scan: 104614,cnt.v_active_count: 927103,cnt.v_inactive_count :47898,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14536, inactive_to_active: 7,active_to_inactive: 0
+Feb 16 18:19:03 FreeBSD103 kernel: number_Inactive_scanned: 34154,number_active_scanned: 163659, total_number_scan: 197813,cnt.v_active_count: 910694,cnt.v_inactive_count :52534,number_pages_queue_for_flush: 17543,inactive_to_cacheFree: 16617, inactive_to_active: 45,active_to_inactive: 0
+Feb 16 18:19:03 FreeBSD103 kernel: number_Inactive_scanned: 34405,number_active_scanned: 174609, total_number_scan: 209014,cnt.v_active_count: 906974,cnt.v_inactive_count :59055,number_pages_queue_for_flush: 21199,inactive_to_cacheFree: 13185, inactive_to_active: 62,active_to_inactive: 48
+Feb 16 18:19:04 FreeBSD103 kernel: number_Inactive_scanned: 27542,number_active_scanned: 59107, total_number_scan: 86649,cnt.v_active_count: 913732,cnt.v_inactive_count :52678,number_pages_queue_for_flush: 13826,inactive_to_cacheFree: 13779, inactive_to_active: 42,active_to_inactive: 144
+Feb 16 18:19:04 FreeBSD103 kernel: number_Inactive_scanned: 21359,number_active_scanned: 21127, total_number_scan: 42486,cnt.v_active_count: 919859,cnt.v_inactive_count :46049,number_pages_queue_for_flush: 7260,inactive_to_cacheFree: 14161, inactive_to_active: 28,active_to_inactive: 96
+Feb 16 18:19:04 FreeBSD103 kernel: number_Inactive_scanned: 24705,number_active_scanned: 75654, total_number_scan: 100359,cnt.v_active_count: 919622,cnt.v_inactive_count :43773,number_pages_queue_for_flush: 7468,inactive_to_cacheFree: 17310, inactive_to_active: 7,active_to_inactive: 0
+Feb 16 18:19:04 FreeBSD103 kernel: number_Inactive_scanned: 28523,number_active_scanned: 201225, total_number_scan: 229748,cnt.v_active_count: 912578,cnt.v_inactive_count :52989,number_pages_queue_for_flush: 14963,inactive_to_cacheFree: 13718, inactive_to_active: 14,active_to_inactive: 0
+Feb 16 18:19:05 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 111403, total_number_scan: 111403,cnt.v_active_count: 885794,cnt.v_inactive_count :85122,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 1426, inactive_to_active: 0,active_to_inactive: 240
+Feb 16 18:19:06 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 90693, total_number_scan: 90693,cnt.v_active_count: 884855,cnt.v_inactive_count :86824,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 10511, inactive_to_active: 0,active_to_inactive: 528
+Feb 16 18:19:07 FreeBSD103 kernel: number_Inactive_scanned: 81055,number_active_scanned: 36865, total_number_scan: 117920,cnt.v_active_count: 923956,cnt.v_inactive_count :34675,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 35036, inactive_to_active: 38896,active_to_inactive: 276
+Feb 16 18:19:08 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 92634, total_number_scan: 92634,cnt.v_active_count: 909739,cnt.v_inactive_count :51321,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 11542, inactive_to_active: 0,active_to_inactive: 890
+Feb 16 18:19:09 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 131823, total_number_scan: 131823,cnt.v_active_count: 909031,cnt.v_inactive_count :54861,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 15841, inactive_to_active: 0,active_to_inactive: 1422
+Feb 16 18:19:10 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 28969, total_number_scan: 28969,cnt.v_active_count: 913855,cnt.v_inactive_count :59056,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 15691, inactive_to_active: 0,active_to_inactive: 1004number_Inactive_scanned: 59077,number_active_scanned: 228280, total_number_scan: 287357,cnt.v_active_count: 925913,cnt.v_inactive_count :41162,number_pages_queue_for_flush: 498,inactive_to_cacheFree: 6108, inactive_to_active: 24739,active_to_inactive: 3
+Feb 16 18:19:11 FreeBSD103 kernel: number_Inactive_scanned: 47926,number_active_scanned: 391521, total_number_scan: 439447,cnt.v_active_count: 887925,cnt.v_inactive_count :84348,number_pages_queue_for_flush: 41242,inactive_to_cacheFree: 12611, inactive_to_active: 5664,active_to_inactive: 1744
+Feb 16 18:19:12 FreeBSD103 kernel: number_Inactive_scanned: 58277,number_active_scanned: 357383, total_number_scan: 415660,cnt.v_active_count: 886233,cnt.v_inactive_count :75568,number_pages_queue_for_flush: 42955,inactive_to_cacheFree: 16025, inactive_to_active: 3738,active_to_inactive: 215
+Feb 16 18:19:13 FreeBSD103 kernel: number_Inactive_scanned: 30106,number_active_scanned: 178372, total_number_scan: 208478,cnt.v_active_count: 867354,cnt.v_inactive_count :92564,number_pages_queue_for_flush: 14312,inactive_to_cacheFree: 44993, inactive_to_active: 2717,active_to_inactive: 1345
+Feb 16 18:19:15 FreeBSD103 kernel: number_Inactive_scanned: 48729,number_active_scanned: 108418, total_number_scan: 157147,cnt.v_active_count: 891214,cnt.v_inactive_count :73653,number_pages_queue_for_flush: 23393,inactive_to_cacheFree: 22148, inactive_to_active: 12651,active_to_inactive: 737
+Feb 16 18:19:15 FreeBSD103 kernel: number_Inactive_scanned: 21239,number_active_scanned: 45033, total_number_scan: 66272,cnt.v_active_count: 884992,cnt.v_inactive_count :74204,number_pages_queue_for_flush: 8770,inactive_to_cacheFree: 18456, inactive_to_active: 136,active_to_inactive: 1065
+Feb 16 18:19:16 FreeBSD103 kernel: number_Inactive_scanned: 33317,number_active_scanned: 73165, total_number_scan: 106482,cnt.v_active_count: 876472,cnt.v_inactive_count :83300,number_pages_queue_for_flush: 20232,inactive_to_cacheFree: 20013, inactive_to_active: 484,active_to_inactive: 1831
+Feb 16 18:19:17 FreeBSD103 kernel: number_Inactive_scanned: 33526,number_active_scanned: 54750, total_number_scan: 88276,cnt.v_active_count: 877406,cnt.v_inactive_count :83131,number_pages_queue_for_flush: 22458,inactive_to_cacheFree: 19310, inactive_to_active: 521,active_to_inactive: 2291
+Feb 16 18:19:17 FreeBSD103 kernel: number_Inactive_scanned: 22732,number_active_scanned: 30314, total_number_scan: 53046,cnt.v_active_count: 878569,cnt.v_inactive_count :81707,number_pages_queue_for_flush: 12061,inactive_to_cacheFree: 16501, inactive_to_active: 70,active_to_inactive: 1922
+Feb 16 18:19:17 FreeBSD103 kernel: number_Inactive_scanned: 24133,number_active_scanned: 29950, total_number_scan: 54083,cnt.v_active_count: 878282,cnt.v_inactive_count :81304,number_pages_queue_for_flush: 14345,inactive_to_cacheFree: 15982, inactive_to_active: 99,active_to_inactive: 2107
+Feb 16 18:19:18 FreeBSD103 kernel: number_Inactive_scanned: 22992,number_active_scanned: 29857, total_number_scan: 52849,cnt.v_active_count: 878160,cnt.v_inactive_count :82347,number_pages_queue_for_flush: 13814,inactive_to_cacheFree: 13806, inactive_to_active: 141,active_to_inactive: 2357
+Feb 16 18:19:18 FreeBSD103 kernel: number_Inactive_scanned: 22853,number_active_scanned: 28318, total_number_scan: 51171,cnt.v_active_count: 879467,cnt.v_inactive_count :80864,number_pages_queue_for_flush: 12840,inactive_to_cacheFree: 14642, inactive_to_active: 372,active_to_inactive: 2312
+Feb 16 18:19:18 FreeBSD103 kernel: number_Inactive_scanned: 33219,number_active_scanned: 34622, total_number_scan: 67841,cnt.v_active_count: 887752,cnt.v_inactive_count :72760,number_pages_queue_for_flush: 14392,inactive_to_cacheFree: 15734, inactive_to_active: 8529,active_to_inactive: 2082
+Feb 16 18:19:19 FreeBSD103 kernel: number_Inactive_scanned: 23435,number_active_scanned: 30722, total_number_scan: 54157,cnt.v_active_count: 887925,cnt.v_inactive_count :71904,number_pages_queue_for_flush: 13928,inactive_to_cacheFree: 15621, inactive_to_active: 330,active_to_inactive: 1968
+Feb 16 18:19:19 FreeBSD103 kernel: number_Inactive_scanned: 23876,number_active_scanned: 32230, total_number_scan: 56106,cnt.v_active_count: 887894,cnt.v_inactive_count :72260,number_pages_queue_for_flush: 14049,inactive_to_cacheFree: 15888, inactive_to_active: 172,active_to_inactive: 2126
+Feb 16 18:19:19 FreeBSD103 kernel: number_Inactive_scanned: 24157,number_active_scanned: 32859, total_number_scan: 57016,cnt.v_active_count: 887813,cnt.v_inactive_count :72790,number_pages_queue_for_flush: 13984,inactive_to_cacheFree: 17239, inactive_to_active: 414,active_to_inactive: 2231
+Feb 16 18:19:20 FreeBSD103 kernel: number_Inactive_scanned: 84317,number_active_scanned: 531246, total_number_scan: 615563,cnt.v_active_count: 914547,cnt.v_inactive_count :45602,number_pages_queue_for_flush: 13935,inactive_to_cacheFree: 29847, inactive_to_active: 58903,active_to_inactive: 1909
+Feb 16 18:19:21 FreeBSD103 kernel: number_Inactive_scanned: 59256,number_active_scanned: 939945, total_number_scan: 999201,cnt.v_active_count: 921151,cnt.v_inactive_count :44009,number_pages_queue_for_flush: 24922,inactive_to_cacheFree: 32991, inactive_to_active: 26440,active_to_inactive: 3579
+Feb 16 18:19:22 FreeBSD103 kernel: number_Inactive_scanned: 47427,number_active_scanned: 937946, total_number_scan: 985373,cnt.v_active_count: 937052,cnt.v_inactive_count :23535,number_pages_queue_for_flush: 17653,inactive_to_cacheFree: 31873, inactive_to_active: 17086,active_to_inactive: 1729
+Feb 16 18:19:23 FreeBSD103 kernel: number_Inactive_scanned: 28802,number_active_scanned: 521781, total_number_scan: 550583,cnt.v_active_count: 913972,cnt.v_inactive_count :45619,number_pages_queue_for_flush: 14108,inactive_to_cacheFree: 36759, inactive_to_active: 2270,active_to_inactive: 3817
+Feb 16 18:19:24 FreeBSD103 kernel: number_Inactive_scanned: 40844,number_active_scanned: 310140, total_number_scan: 350984,cnt.v_active_count: 906839,cnt.v_inactive_count :53378,number_pages_queue_for_flush: 20735,inactive_to_cacheFree: 34332, inactive_to_active: 7164,active_to_inactive: 1073
+Feb 16 18:19:25 FreeBSD103 kernel: number_Inactive_scanned: 63481,number_active_scanned: 581578, total_number_scan: 645059,cnt.v_active_count: 906990,cnt.v_inactive_count :55813,number_pages_queue_for_flush: 21182,inactive_to_cacheFree: 17744, inactive_to_active: 31600,active_to_inactive: 1631
+Feb 16 18:19:25 FreeBSD103 kernel: number_Inactive_scanned: 53372,number_active_scanned: 578596, total_number_scan: 631968,cnt.v_active_count: 893529,cnt.v_inactive_count :70430,number_pages_queue_for_flush: 37159,inactive_to_cacheFree: 16574, inactive_to_active: 6443,active_to_inactive: 1667
+Feb 16 18:19:26 FreeBSD103 kernel: number_Inactive_scanned: 45267,number_active_scanned: 55326, total_number_scan: 100593,cnt.v_active_count: 901080,cnt.v_inactive_count :60687,number_pages_queue_for_flush: 26684,inactive_to_cacheFree: 18606, inactive_to_active: 7043,active_to_inactive: 1247
+Feb 16 18:19:26 FreeBSD103 kernel: number_Inactive_scanned: 25306,number_active_scanned: 37316, total_number_scan: 62622,cnt.v_active_count: 884132,cnt.v_inactive_count :75186,number_pages_queue_for_flush: 13092,inactive_to_cacheFree: 20356, inactive_to_active: 246,active_to_inactive: 1440
+Feb 16 18:19:27 FreeBSD103 kernel: number_Inactive_scanned: 23931,number_active_scanned: 28065, total_number_scan: 51996,cnt.v_active_count: 873885,cnt.v_inactive_count :86082,number_pages_queue_for_flush: 12083,inactive_to_cacheFree: 16673, inactive_to_active: 793,active_to_inactive: 1937
+Feb 16 18:19:27 FreeBSD103 kernel: number_Inactive_scanned: 38727,number_active_scanned: 55634, total_number_scan: 94361,cnt.v_active_count: 873387,cnt.v_inactive_count :90289,number_pages_queue_for_flush: 29309,inactive_to_cacheFree: 16199, inactive_to_active: 42,active_to_inactive: 2601
+Feb 16 18:19:28 FreeBSD103 kernel: number_Inactive_scanned: 24246,number_active_scanned: 27856, total_number_scan: 52102,cnt.v_active_count: 873184,cnt.v_inactive_count :87151,number_pages_queue_for_flush: 13064,inactive_to_cacheFree: 15801, inactive_to_active: 118,active_to_inactive: 1600
+Feb 16 18:19:28 FreeBSD103 kernel: number_Inactive_scanned: 27261,number_active_scanned: 36296, total_number_scan: 63557,cnt.v_active_count: 870265,cnt.v_inactive_count :89376,number_pages_queue_for_flush: 14798,inactive_to_cacheFree: 18371, inactive_to_active: 75,active_to_inactive: 2391
+Feb 16 18:19:29 FreeBSD103 kernel: number_Inactive_scanned: 28069,number_active_scanned: 48020, total_number_scan: 76089,cnt.v_active_count: 864650,cnt.v_inactive_count :95913,number_pages_queue_for_flush: 16897,inactive_to_cacheFree: 21702, inactive_to_active: 293,active_to_inactive: 2549
+Feb 16 18:19:30 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 87506, total_number_scan: 87506,cnt.v_active_count: 868422,cnt.v_inactive_count :104306,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 4504, inactive_to_active: 0,active_to_inactive: 974number_Inactive_scanned: 29353,number_active_scanned: 2779, total_number_scan: 32132,cnt.v_active_count: 868646,cnt.v_inactive_count :89647,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14543, inactive_to_active: 224,active_to_inactive: 10
+Feb 16 18:19:31 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 87140, total_number_scan: 87140,cnt.v_active_count: 869628,cnt.v_inactive_count :101375,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 3237, inactive_to_active: 0,active_to_inactive: 1477
+Feb 16 18:19:31 FreeBSD103 kernel: number_Inactive_scanned: 48738,number_active_scanned: 42618, total_number_scan: 91356,cnt.v_active_count: 881966,cnt.v_inactive_count :76358,number_pages_queue_for_flush: 512,inactive_to_cacheFree: 14905, inactive_to_active: 12806,active_to_inactive: 287
+Feb 16 18:19:32 FreeBSD103 kernel: number_Inactive_scanned: 42127,number_active_scanned: 52725, total_number_scan: 94852,cnt.v_active_count: 886143,cnt.v_inactive_count :74978,number_pages_queue_for_flush: 32051,inactive_to_cacheFree: 18591, inactive_to_active: 819,active_to_inactive: 1711
+Feb 16 18:19:32 FreeBSD103 kernel: number_Inactive_scanned: 24725,number_active_scanned: 37881, total_number_scan: 62606,cnt.v_active_count: 881518,cnt.v_inactive_count :77888,number_pages_queue_for_flush: 12409,inactive_to_cacheFree: 18989, inactive_to_active: 678,active_to_inactive: 1581
+Feb 16 18:19:32 FreeBSD103 kernel: number_Inactive_scanned: 23649,number_active_scanned: 27878, total_number_scan: 51527,cnt.v_active_count: 893395,cnt.v_inactive_count :66397,number_pages_queue_for_flush: 6696,inactive_to_cacheFree: 21319, inactive_to_active: 4098,active_to_inactive: 1150
+Feb 16 18:19:33 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 89789, total_number_scan: 89789,cnt.v_active_count: 890667,cnt.v_inactive_count :80075,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 15243, inactive_to_active: 0,active_to_inactive: 984
+Feb 16 18:19:34 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 100110, total_number_scan: 100110,cnt.v_active_count: 890348,cnt.v_inactive_count :80922,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 1413, inactive_to_active: 0,active_to_inactive: 66
+Feb 16 18:19:35 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 15670, total_number_scan: 15670,cnt.v_active_count: 890350,cnt.v_inactive_count :82168,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 3223, inactive_to_active: 0,active_to_inactive: 155number_Inactive_scanned: 0,number_active_scanned: 178, total_number_scan: 178,cnt.v_active_count: 890349,cnt.v_inactive_count :82154,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 12, inactive_to_active: 0,active_to_inactive: 0number_Inactive_scanned: 30119,number_active_scanned: 896, total_number_scan: 31015,cnt.v_active_count: 896107,cnt.v_inactive_count :61911,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14871, inactive_to_active: 5756,active_to_inactive: 6
+Feb 16 18:19:36 FreeBSD103 kernel: number_Inactive_scanned: 71849,number_active_scanned: 753530, total_number_scan: 825379,cnt.v_active_count: 907236,cnt.v_inactive_count :59310,number_pages_queue_for_flush: 19829,inactive_to_cacheFree: 34326, inactive_to_active: 45186,active_to_inactive: 1400
+Feb 16 18:19:36 FreeBSD103 kernel: number_Inactive_scanned: 58491,number_active_scanned: 799606, total_number_scan: 858097,cnt.v_active_count: 919937,cnt.v_inactive_count :38770,number_pages_queue_for_flush: 6458,inactive_to_cacheFree: 19519, inactive_to_active: 38266,active_to_inactive: 1132
+Feb 16 18:19:37 FreeBSD103 kernel: number_Inactive_scanned: 44062,number_active_scanned: 855032, total_number_scan: 899094,cnt.v_active_count: 914000,cnt.v_inactive_count :45091,number_pages_queue_for_flush: 12860,inactive_to_cacheFree: 24204, inactive_to_active: 17889,active_to_inactive: 2296
+Feb 16 18:19:37 FreeBSD103 kernel: number_Inactive_scanned: 48616,number_active_scanned: 772855, total_number_scan: 821471,cnt.v_active_count: 916584,cnt.v_inactive_count :42899,number_pages_queue_for_flush: 10637,inactive_to_cacheFree: 18405, inactive_to_active: 25029,active_to_inactive: 2039
+Feb 16 18:19:38 FreeBSD103 kernel: number_Inactive_scanned: 49991,number_active_scanned: 841881, total_number_scan: 891872,cnt.v_active_count: 896079,cnt.v_inactive_count :65810,number_pages_queue_for_flush: 32391,inactive_to_cacheFree: 25040, inactive_to_active: 5819,active_to_inactive: 2461
+Feb 16 18:19:39 FreeBSD103 kernel: number_Inactive_scanned: 45416,number_active_scanned: 77592, total_number_scan: 123008,cnt.v_active_count: 895040,cnt.v_inactive_count :66419,number_pages_queue_for_flush: 31024,inactive_to_cacheFree: 23162, inactive_to_active: 1972,active_to_inactive: 1518
+Feb 16 18:19:39 FreeBSD103 kernel: number_Inactive_scanned: 27486,number_active_scanned: 25621, total_number_scan: 53107,cnt.v_active_count: 897174,cnt.v_inactive_count :62451,number_pages_queue_for_flush: 14474,inactive_to_cacheFree: 16460, inactive_to_active: 41,active_to_inactive: 1026
+Feb 16 18:19:39 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 23416, total_number_scan: 23416,cnt.v_active_count: 888981,cnt.v_inactive_count :83727,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 3848, inactive_to_active: 0,active_to_inactive: 1649number_Inactive_scanned: 38151,number_active_scanned: 800, total_number_scan: 38951,cnt.v_active_count: 888781,cnt.v_inactive_count :69400,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14529, inactive_to_active: 25,active_to_inactive: 2
+Feb 16 18:19:40 FreeBSD103 kernel: number_Inactive_scanned: 50466,number_active_scanned: 65478, total_number_scan: 115944,cnt.v_active_count: 893596,cnt.v_inactive_count :68603,number_pages_queue_for_flush: 36185,inactive_to_cacheFree: 21536, inactive_to_active: 5798,active_to_inactive: 1905
+Feb 16 18:19:40 FreeBSD103 kernel: number_Inactive_scanned: 29602,number_active_scanned: 42229, total_number_scan: 71831,cnt.v_active_count: 894699,cnt.v_inactive_count :64600,number_pages_queue_for_flush: 14804,inactive_to_cacheFree: 23613, inactive_to_active: 1462,active_to_inactive: 1744
+Feb 16 18:19:41 FreeBSD103 kernel: number_Inactive_scanned: 24745,number_active_scanned: 46117, total_number_scan: 70862,cnt.v_active_count: 898974,cnt.v_inactive_count :59603,number_pages_queue_for_flush: 10558,inactive_to_cacheFree: 31551, inactive_to_active: 342,active_to_inactive: 1415
+Feb 16 18:19:41 FreeBSD103 kernel: number_Inactive_scanned: 25125,number_active_scanned: 46287, total_number_scan: 71412,cnt.v_active_count: 902054,cnt.v_inactive_count :56829,number_pages_queue_for_flush: 11083,inactive_to_cacheFree: 30419, inactive_to_active: 418,active_to_inactive: 1415
+Feb 16 18:19:42 FreeBSD103 kernel: number_Inactive_scanned: 27202,number_active_scanned: 39012, total_number_scan: 66214,cnt.v_active_count: 903922,cnt.v_inactive_count :54980,number_pages_queue_for_flush: 11863,inactive_to_cacheFree: 20528, inactive_to_active: 2391,active_to_inactive: 1596
+Feb 16 18:19:42 FreeBSD103 kernel: number_Inactive_scanned: 67210,number_active_scanned: 946529, total_number_scan: 1013739,cnt.v_active_count: 933506,cnt.v_inactive_count :27503,number_pages_queue_for_flush: 13301,inactive_to_cacheFree: 15625, inactive_to_active: 41505,active_to_inactive: 1660
+Feb 16 18:19:43 FreeBSD103 kernel: number_Inactive_scanned: 38628,number_active_scanned: 943920, total_number_scan: 982548,cnt.v_active_count: 942258,cnt.v_inactive_count :18481,number_pages_queue_for_flush: 15327,inactive_to_cacheFree: 17054, inactive_to_active: 10747,active_to_inactive: 1963
+Feb 16 18:19:43 FreeBSD103 kernel: number_Inactive_scanned: 27222,number_active_scanned: 941944, total_number_scan: 969166,cnt.v_active_count: 933480,cnt.v_inactive_count :26058,number_pages_queue_for_flush: 14146,inactive_to_cacheFree: 16718, inactive_to_active: 229,active_to_inactive: 2220
+Feb 16 18:19:44 FreeBSD103 kernel: number_Inactive_scanned: 29519,number_active_scanned: 918353, total_number_scan: 947872,cnt.v_active_count: 911281,cnt.v_inactive_count :48477,number_pages_queue_for_flush: 18214,inactive_to_cacheFree: 19450, inactive_to_active: 536,active_to_inactive: 1704
+Feb 16 18:19:45 FreeBSD103 kernel: number_Inactive_scanned: 40316,number_active_scanned: 88519, total_number_scan: 128835,cnt.v_active_count: 904250,cnt.v_inactive_count :58774,number_pages_queue_for_flush: 23928,inactive_to_cacheFree: 19160, inactive_to_active: 4274,active_to_inactive: 2725
+Feb 16 18:19:45 FreeBSD103 kernel: number_Inactive_scanned: 34342,number_active_scanned: 41422, total_number_scan: 75764,cnt.v_active_count: 900698,cnt.v_inactive_count :60715,number_pages_queue_for_flush: 22608,inactive_to_cacheFree: 16584, inactive_to_active: 128,active_to_inactive: 1484
+Feb 16 18:19:45 FreeBSD103 kernel: number_Inactive_scanned: 28366,number_active_scanned: 34635, total_number_scan: 63001,cnt.v_active_count: 903962,cnt.v_inactive_count :56092,number_pages_queue_for_flush: 13361,inactive_to_cacheFree: 18036, inactive_to_active: 2041,active_to_inactive: 1412
+Feb 16 18:19:46 FreeBSD103 kernel: number_Inactive_scanned: 29261,number_active_scanned: 35215, total_number_scan: 64476,cnt.v_active_count: 912329,cnt.v_inactive_count :46293,number_pages_queue_for_flush: 10343,inactive_to_cacheFree: 22932, inactive_to_active: 5380,active_to_inactive: 1376
+Feb 16 18:19:46 FreeBSD103 kernel: number_Inactive_scanned: 25985,number_active_scanned: 115468, total_number_scan: 141453,cnt.v_active_count: 915929,cnt.v_inactive_count :42718,number_pages_queue_for_flush: 10492,inactive_to_cacheFree: 37808, inactive_to_active: 1826,active_to_inactive: 1980
+Feb 16 18:19:47 FreeBSD103 kernel: number_Inactive_scanned: 47839,number_active_scanned: 937393, total_number_scan: 985232,cnt.v_active_count: 932413,cnt.v_inactive_count :27123,number_pages_queue_for_flush: 14650,inactive_to_cacheFree: 42351, inactive_to_active: 19802,active_to_inactive: 1923
+Feb 16 18:19:48 FreeBSD103 kernel: number_Inactive_scanned: 31798,number_active_scanned: 932664, total_number_scan: 964462,cnt.v_active_count: 924666,cnt.v_inactive_count :34863,number_pages_queue_for_flush: 18464,inactive_to_cacheFree: 24748, inactive_to_active: 235,active_to_inactive: 2005
+Feb 16 18:19:49 FreeBSD103 kernel: number_Inactive_scanned: 32219,number_active_scanned: 928909, total_number_scan: 961128,cnt.v_active_count: 925617,cnt.v_inactive_count :34457,number_pages_queue_for_flush: 16710,inactive_to_cacheFree: 37217, inactive_to_active: 2470,active_to_inactive: 2440
+Feb 16 18:19:50 FreeBSD103 kernel: number_Inactive_scanned: 29569,number_active_scanned: 906106, total_number_scan: 935675,cnt.v_active_count: 913303,cnt.v_inactive_count :46764,number_pages_queue_for_flush: 14601,inactive_to_cacheFree: 18775, inactive_to_active: 2822,active_to_inactive: 2353
+Feb 16 18:19:50 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 36010, total_number_scan: 36010,cnt.v_active_count: 913429,cnt.v_inactive_count :58999,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 5904, inactive_to_active: 0,active_to_inactive: 1591
+Feb 16 18:19:50 FreeBSD103 kernel: number_Inactive_scanned: 45217,number_active_scanned: 17113, total_number_scan: 62330,cnt.v_active_count: 925584,cnt.v_inactive_count :32561,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14567, inactive_to_active: 14602,active_to_inactive: 34
+Feb 16 18:19:51 FreeBSD103 kernel: number_Inactive_scanned: 46909,number_active_scanned: 937335, total_number_scan: 984244,cnt.v_active_count: 911925,cnt.v_inactive_count :57720,number_pages_queue_for_flush: 32924,inactive_to_cacheFree: 15891, inactive_to_active: 11738,active_to_inactive: 1965
+Feb 16 18:19:51 FreeBSD103 kernel: number_Inactive_scanned: 35800,number_active_scanned: 798250, total_number_scan: 834050,cnt.v_active_count: 906150,cnt.v_inactive_count :55295,number_pages_queue_for_flush: 21605,inactive_to_cacheFree: 17661, inactive_to_active: 1704,active_to_inactive: 707
+Feb 16 18:19:52 FreeBSD103 kernel: number_Inactive_scanned: 34473,number_active_scanned: 695875, total_number_scan: 730348,cnt.v_active_count: 908936,cnt.v_inactive_count :51291,number_pages_queue_for_flush: 18425,inactive_to_cacheFree: 23797, inactive_to_active: 3121,active_to_inactive: 1636
+Feb 16 18:19:52 FreeBSD103 kernel: number_Inactive_scanned: 30415,number_active_scanned: 45783, total_number_scan: 76198,cnt.v_active_count: 913810,cnt.v_inactive_count :45437,number_pages_queue_for_flush: 12845,inactive_to_cacheFree: 21415, inactive_to_active: 4380,active_to_inactive: 1862
+Feb 16 18:19:53 FreeBSD103 kernel: number_Inactive_scanned: 22956,number_active_scanned: 701423, total_number_scan: 724379,cnt.v_active_count: 917338,cnt.v_inactive_count :42291,number_pages_queue_for_flush: 10063,inactive_to_cacheFree: 16730, inactive_to_active: 24,active_to_inactive: 1329
+Feb 16 18:19:53 FreeBSD103 kernel: number_Inactive_scanned: 24669,number_active_scanned: 706319, total_number_scan: 730988,cnt.v_active_count: 916096,cnt.v_inactive_count :43329,number_pages_queue_for_flush: 13911,inactive_to_cacheFree: 13714, inactive_to_active: 530,active_to_inactive: 1877
+Feb 16 18:19:53 FreeBSD103 kernel: number_Inactive_scanned: 32102,number_active_scanned: 713544, total_number_scan: 745646,cnt.v_active_count: 914000,cnt.v_inactive_count :45720,number_pages_queue_for_flush: 15444,inactive_to_cacheFree: 13615, inactive_to_active: 5861,active_to_inactive: 2064
+Feb 16 18:19:54 FreeBSD103 kernel: number_Inactive_scanned: 30259,number_active_scanned: 706165, total_number_scan: 736424,cnt.v_active_count: 910040,cnt.v_inactive_count :50217,number_pages_queue_for_flush: 20555,inactive_to_cacheFree: 13305, inactive_to_active: 44,active_to_inactive: 1984
+Feb 16 18:19:54 FreeBSD103 kernel: number_Inactive_scanned: 26245,number_active_scanned: 41122, total_number_scan: 67367,cnt.v_active_count: 909238,cnt.v_inactive_count :51494,number_pages_queue_for_flush: 17328,inactive_to_cacheFree: 13516, inactive_to_active: 56,active_to_inactive: 2071
+Feb 16 18:19:55 FreeBSD103 kernel: number_Inactive_scanned: 26586,number_active_scanned: 34820, total_number_scan: 61406,cnt.v_active_count: 909154,cnt.v_inactive_count :50360,number_pages_queue_for_flush: 14305,inactive_to_cacheFree: 16876, inactive_to_active: 339,active_to_inactive: 2423
+Feb 16 18:19:55 FreeBSD103 kernel: number_Inactive_scanned: 27859,number_active_scanned: 53717, total_number_scan: 81576,cnt.v_active_count: 908760,cnt.v_inactive_count :50240,number_pages_queue_for_flush: 14084,inactive_to_cacheFree: 29214, inactive_to_active: 604,active_to_inactive: 2557
+Feb 16 18:19:56 FreeBSD103 kernel: number_Inactive_scanned: 27282,number_active_scanned: 72891, total_number_scan: 100173,cnt.v_active_count: 910009,cnt.v_inactive_count :48976,number_pages_queue_for_flush: 12758,inactive_to_cacheFree: 44059, inactive_to_active: 906,active_to_inactive: 2312
+Feb 16 18:19:57 FreeBSD103 kernel: number_Inactive_scanned: 29998,number_active_scanned: 797684, total_number_scan: 827682,cnt.v_active_count: 913544,cnt.v_inactive_count :45355,number_pages_queue_for_flush: 12987,inactive_to_cacheFree: 28116, inactive_to_active: 3437,active_to_inactive: 1872
+Feb 16 18:19:57 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 43566, total_number_scan: 43566,cnt.v_active_count: 913349,cnt.v_inactive_count :59158,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 11555, inactive_to_active: 0,active_to_inactive: 2124number_Inactive_scanned: 29041,number_active_scanned: 1187, total_number_scan: 30228,cnt.v_active_count: 913550,cnt.v_inactive_count :44414,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 14543, inactive_to_active: 201,active_to_inactive: 0
+Feb 16 18:19:58 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 23, total_number_scan: 23,cnt.v_active_count: 237,cnt.v_inactive_count :375,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 45930, inactive_to_active: 0,active_to_inactive: 108
+Feb 16 18:19:59 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 24, total_number_scan: 24,cnt.v_active_count: 237,cnt.v_inactive_count :375,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:00 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 30, total_number_scan: 30,cnt.v_active_count: 289,cnt.v_inactive_count :637,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 8, inactive_to_active: 3,active_to_inactive: 3
+Feb 16 18:20:01 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 30, total_number_scan: 30,cnt.v_active_count: 289,cnt.v_inactive_count :637,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:02 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 30, total_number_scan: 30,cnt.v_active_count: 263,cnt.v_inactive_count :663,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:03 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 27, total_number_scan: 27,cnt.v_active_count: 263,cnt.v_inactive_count :663,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:04 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 27, total_number_scan: 27,cnt.v_active_count: 259,cnt.v_inactive_count :667,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:05 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 26, total_number_scan: 26,cnt.v_active_count: 251,cnt.v_inactive_count :675,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:06 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 25, total_number_scan: 25,cnt.v_active_count: 250,cnt.v_inactive_count :676,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:07 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 25, total_number_scan: 25,cnt.v_active_count: 233,cnt.v_inactive_count :693,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:08 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 23, total_number_scan: 23,cnt.v_active_count: 226,cnt.v_inactive_count :700,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:09 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 22, total_number_scan: 22,cnt.v_active_count: 225,cnt.v_inactive_count :701,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:10 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 23, total_number_scan: 23,cnt.v_active_count: 213,cnt.v_inactive_count :713,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:11 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 33, total_number_scan: 33,cnt.v_active_count: 329,cnt.v_inactive_count :996,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 11
+Feb 16 18:20:13 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 34, total_number_scan: 34,cnt.v_active_count: 329,cnt.v_inactive_count :996,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0
+Feb 16 18:20:14 FreeBSD103 kernel: number_Inactive_scanned: 0,number_active_scanned: 34, total_number_scan: 34,cnt.v_active_count: 329,cnt.v_inactive_count :996,number_pages_queue_for_flush: 0,inactive_to_cacheFree: 0, inactive_to_active: 0,active_to_inactive: 0

@@ -1,0 +1,7 @@
+For my program, it checks for two cases: one with no filenames given and second with filename(s) given.
+
+Case 1:
+The cat program will simply just echo whatever you type into the console. To do this, I first needed to check how many arguments were given to determine if the user gave any filenames. If no files were given, I needed a way to constantly write whatever the user typed into the console so I used a while loop. This loop had a condition where it would read whatever was typed into the standard input and make sure that the number of bytes was greater than zero. Then inside the loop it would simply write whatever was read into the standard output.
+
+Case 2:
+The program will read one or more files and display it to the standard output. For this I needed a way to read a specific amount of files so I used a for loop with a constraint on the index being the value of argc. The loop would cycle the contents of argv array and for each loop would open the file, read it and then write to the standart output.

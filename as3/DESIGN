@@ -1,0 +1,43 @@
+We modified four files: vm_page.h, vm_page.c, vm_pageout.c, vm_phys.c
+
+vm_page.h:
+Starting on line 379, we have 4 variables: active_to_inactive, inactive_to_active, 
+inactive_to_cacheFree,and number_pages_queue_for_flush. 
+
+vm_page.c:
+In function _vm_page_deactivate(2474), we changed TAILQ_INSERT_TAIL to TailQ_INSERT_HEAD because
+pages moved to the inactive are moved to the front which is the head.
+
+In vm_page_deactivate(2488), we changed _vm_page_deactivate(m, 0) to _vm_page_deactivate(m, 1)
+which sets the athead parameter to 1 and inserts the page at the head of inactive queue. 
+
+In vm_page_requeue(2139), we changed TAILQ_INSERT_TAIL to TAILQ_INSERT_HEAD so pages that
+are reinserted are put at the front.
+
+In vm_page_requeue_locked(2162), we changed TAILQ_INSERT_TAIL to TAILQ_INSERT_HEAD for the same
+reason as vm_page_requeue.
+
+In vm_page_enqueue(2115), we changed TAILQ_INSERT_TAIL to TAILQ_INSERT_HEAD so pages that are
+added to the specified queue are added to the front of the queue.
+
+vm_phys.c:
+In vm_freelist_add(246), we commented out the if statement and left the TAILQ_INSERT_TAIL so
+that invalid/inactive pages are added to the rear of the free list.
+
+vm_pageout.c:
+In vm_pageout_scan(1501), we changed m->act_count -= min(m->act_count, ACT_DECLINE) to
+m->act_count = m->act_count/2 because the activity count is halved instead of subtracted.
+
+In vm_pageout_init(1874), we changed vm_pageout_update_period = 600 to vm_pageout_update_period = 10
+because we wanted the pageout scan to run more frequently. 
+
+On line 1532, we call the log function to print out the value of variables that record
+the data we use for our Writeup pdf. Variables are 
+number_Inactive_scanned: Number of inactive pages scanned
+number_active_scanned: Number of active pages scanned
+inactive_to_cacheFree: Number of pages moved to inactive queue to cache
+inactive_to_active: Number of pages moved from inactive to active queue
+active_to_inactive: Number of pages moved from active to inactive queue
+cnt.v_active_count: number of pages that are active
+cnt.v_inactive_count: number of pages that are inactive
+number_pages_queued_for_flush: number of pages that have been flushed

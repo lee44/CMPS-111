@@ -1,0 +1,89 @@
+***********************************************************************
+Functions
+***********************************************************************
+
+Proc.h
+	In struct thread, we added 2 variables. uint32_t tickets, and
+	char ticketed. Tickets is the number of tickets the thread has
+	ticketed is wether or not the thread has gotten it's initial 500
+	tickets
+
+Runq.h
+	Added the following headers:
+		struct  thread *runq_lottery_choose(struct runq *rq);
+		struct	thread *runq_choose(struct runq *);
+
+sched_ule.c
+	- added 3 new rtq(runtime queues) in tdq(thread queues) struct one for interactive, one for 
+		  timeshare and one for idle (251-253)
+	- Add the 3 new tdqs in tdq_setup(tdq) (1394-1396, which initialize the 3 rtq)
+	tdq_runq_add (only modified): (460)
+		- set the default number of tickets to 500, and set ticketed
+		  to true (520)
+		- Check to see if the process being looked at adding is a root
+		  process with sys_getuid(td, 0) (477), then we used the information
+		  in td->retval[0] to determine if it was root
+		- All system processes are still handled the same way they 
+		  would be in freeBSD as instructed
+		- All user processes would then go into lottery_add(runq, td)
+
+	tdq_choose (only modified)
+		- all the user realtime and system processes are given priority
+		- Then we pick from the pool of user timeshare and idle
+		  processes via the runq_lottery_choose function
+		- If all fail return null.
+
+	sched_nice (only modified)
+		- Call sched_takeaway_tickets or sched_give_tickets depending
+		  on whether the nice value is positive or negative. 
+
+	sched_give_tickets(td, score) 
+		- Give tickets to the process depending on its score, which is
+		  determined in sched_priority (which is also the function that
+		  calls this function).
+
+	sched_takeaway_tickets(td, score)
+		- Take away tickets from the process depending on its score, 
+		  which is determined in sched_priority (which is also the 
+		  function that calls this function)
+
+	sched_priority (only modified) 
+		- Call sched_takeaway_tickets or sched_give_tickets depending
+		  on the priority score.
+
+kern_switch.c
+	runq_lottery_add(runq, td):
+		- runq = the runq selected, td = the thread being added
+		- We set priority to 1 and stack all of the threads on just 
+		  pri 1.
+		- Then we just TAILQ_INSERT_BACK(rqh, rd, td_runq)
+	runq_lottery_choose(runq)
+		- runq = the runq selected
+		- Just like runq_add, but:
+		- we set the priority to 1
+		- we count the total number of tickets in the queue
+		- Determine a winner via random() % (total tix + 1)
+		- We itterate the whole queue again and find the winner via a
+		  counter that gets compared to the winner, and return the 
+		  thread.
+		  if (current_tickets >= winner) return (td);
+		- Otherwise return NULL
+
+***********************************************************************
+Testing
+***********************************************************************
+
+$ Read dumpfiles
+	via kgdb to read vmcore.0 for when we initially were getting
+	page faults.
+
+	This was helpful to show us that we had clearly messed something
+	up besides the scheduler and thus we started over from scratch
+
+$ Print Statements
+	By putting in print statements at certain points in the code we
+	were able to narrow down where our issues were.
+
+	This is how we knew that lottery scheduling was actually being
+	used correctly and thus we had completed the assignment.
+

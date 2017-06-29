@@ -1,0 +1,11 @@
+We created three files: sys_setkey.c, protectfile.c, and cryptouser.h.
+
+cryptouser.h:
+We created our own struct that stores the user id, user's key, the first 32 bits(k0) and the last 32 bits(k1) of the key. In addition, we created
+a global variable count and a struct array of size 16 to store 16 user keys. The array and the count variable are intialized in the sched_ule.c file.
+
+sys_setkey.c:
+We have two system calls: sys_getkey and sys_setkey. sys_setkey takes the two unsigned long k0 and k1 that it received from the caller and combines them into a 64 bit long long variable. Then we store the 64 bit key in a struct variable along with the user id, k0, and k1. Everytime a user is added into the array we check if count doesn't exceed 16 keys. If it doesn't we insert the struct in one of the elements of the array based on the count index.
+For sys_getkey, we loop through the entire struct array and compare the user id which is passed in by the caller to all the user id stored in the array. If one pair matches, return the first 32 bit key, k0 and the last 32 bit key k1.
+
+ protectfile.c:
